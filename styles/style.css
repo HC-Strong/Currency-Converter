@@ -5,18 +5,85 @@ body {
 }
 
 div.container {
-  border: 1px solid black;
+  border: 5px double #330324;
+  border-radius: 40px;
   background-color: #EEE0CB;
   margin: auto;
   width: 55%;
-}
-
-div.container * {
-  padding-left: 2.5em;
-  padding-right: 2.5em;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 0px;
+  color: #330324;
 }
 h1 {
   padding-top: 1.5em;
-  padding-bottom: 0.8em;
+  padding-bottom: 0.4em;
   margin:auto;
+}
+
+h2 {
+  padding-top: 1.5em;
+  padding-bottom: 0.4em;
+  margin:auto;
+  color: #EEE0CB;
+  text-shadow:
+   -1px -1px 0 #330324,
+    1px -1px 0 #330324,
+    -1px 1px 0 #330324,
+     1px 1px 0 #330324;
+}
+
+form {
+  border: 5px double #330324;
+  border-radius: 30px;
+  background-color: #9daeb3;
+  padding-top: 20px;
+}
+
+legend {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.05em;
+}
+hr {
+  border-bottom: 1px dotted #330324;
+}
+
+
+input {
+  background-color: #d9c0bd;
+  border-radius: 10px;
+  color: #330324;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1em;
+  width: 8em;
+  padding: 5  px;
+}
+
+input[type="number"] {
+  padding-right:0px;
+  padding-left: 15px;
+}
+
+input[type="button"]  {
+  margin-top: 0.8em;
+  margin-right: 4em;
+  font-size: 1.5em;
+  width: 3.5em;
+  height: 1.5em;
+  text-align: center;
+}
+input[type="button"]:hover  {
+  text-align: center;
+  color: #9daeb3;
+  background-color: #330324;
+  font-weight: bolder;
+  font-style: oblique;
+}
+
+li {
+  list-style-type: none; /* Remove bullets */
+  width: 100%;
 }

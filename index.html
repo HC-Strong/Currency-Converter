@@ -10,9 +10,32 @@
   <body>
     <div class="container">
       <h1>Currency Converter</h1>
-      <p>$1 USD in Canadian Dollars is...</p>
-      <p id="result"></p>
-      </ul>
+      <form>
+        <legend>Select to and from currancies and an amount to convert, and hit "GO!"</legend>
+        <hr>
+        <ul>
+          <li>
+            <label for="amount-to-convert">Amount: </lable>
+            <input type="number" id="amount-to-convert" value=1>
+          </li>
+          <br>
+          <li>
+            <label for="from-currency">Convert From: </lable>
+            <input type="text" id="from-currency" value="USD">
+            <label for="to-currency"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Convert To: </lable>
+            <input type="text" id="to-currency" value="CAD">
+          </li>
+          <li>
+            <input type="button" action="submit" value="GO!">
+          </li>
+        </ul>
+      </form>
+      <br>
+      <br>
+      <p>$1 USD in Canadian Dollars is: <span id="result"></span>.</p>
+      <p>This currency converter uses the <a href="https://www.exchangerate-api.com/" target="_blank" rel="noopener noreferrer">ExchangeRate-API</a>.</p>
+
+
     </div>
   </body>
 </html>
