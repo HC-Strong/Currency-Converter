@@ -21,18 +21,6 @@ h1 {
   margin:auto;
 }
 
-h2 {
-  padding-top: 1.5em;
-  padding-bottom: 0.4em;
-  margin:auto;
-  color: #EEE0CB;
-  text-shadow:
-   -1px -1px 0 #330324,
-    1px -1px 0 #330324,
-    -1px 1px 0 #330324,
-     1px 1px 0 #330324;
-}
-
 form {
   border: 5px double #330324;
   border-radius: 30px;
@@ -45,7 +33,10 @@ legend {
   font-style: italic;
   text-align: center;
   font-size: 1.05em;
+  padding-left: 26px;
+  padding-right: 26px;
 }
+
 hr {
   border-bottom: 1px dotted #330324;
 }
@@ -58,8 +49,8 @@ input {
   font-weight: bold;
   text-align: center;
   font-size: 1.1em;
-  width: 8em;
-  padding: 5  px;
+  width: 18%;
+  padding: 5px;
 }
 
 input[type="number"] {
@@ -67,15 +58,15 @@ input[type="number"] {
   padding-left: 15px;
 }
 
-input[type="button"]  {
-  margin-top: 0.8em;
+input[type="submit"]  {
+  margin-top: 1em;
   margin-right: 4em;
   font-size: 1.5em;
   width: 3.5em;
   height: 1.5em;
   text-align: center;
 }
-input[type="button"]:hover  {
+input[type="submit"]:hover  {
   text-align: center;
   color: #9daeb3;
   background-color: #330324;
@@ -86,4 +77,26 @@ input[type="button"]:hover  {
 li {
   list-style-type: none; /* Remove bullets */
   width: 100%;
+}
+
+p.source {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+li.test {
+  /* border: 5px double #330324; */
+  text-align: center;
+  margin-top: 0.5em;
+  position: absolute;
+  left:0;
+  right:0;
+}
+#result.full{
+  border: 5px double #330324;
+  border-radius: 40px;
+  background-color: #EEE0CB;
+  font-weight: bold;
+  padding: 8px;
+  float: center;
 }

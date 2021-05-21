@@ -10,30 +10,35 @@
   <body>
     <div class="container">
       <h1>Currency Converter</h1>
-      <form>
+      <form id="converter-form">
         <legend>Select to and from currancies and an amount to convert, and hit "GO!"</legend>
         <hr>
         <ul>
           <li>
             <label for="amount-to-convert">Amount: </lable>
-            <input type="number" id="amount-to-convert" value=1>
+            <input type="number" id="amount-to-convert" value=1.00 step=0.01 name="amount">
           </li>
           <br>
           <li>
-            <label for="from-currency">Convert From: </lable>
-            <input type="text" id="from-currency" value="USD">
-            <label for="to-currency"> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Convert To: </lable>
-            <input type="text" id="to-currency" value="CAD">
+            <label for="from-currency">Convert From:&nbsp;</lable>
+            <input type="text" id="from-currency" value="USD" name="from">
+            <label for="to-currency">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Convert&nbsp;To:&nbsp;</lable>
+            <input type="text" id="to-currency" value="CAD" name="to">
           </li>
           <li>
-            <input type="button" action="submit" value="GO!">
+            <input type="submit" value="GO!">
+            <br>
+            <br>
+          </li>
+          <li class="test">
+            <output id="result"></output>
           </li>
         </ul>
       </form>
       <br>
       <br>
-      <p>$1 USD in Canadian Dollars is: <span id="result"></span>.</p>
-      <p>This currency converter uses the <a href="https://www.exchangerate-api.com/" target="_blank" rel="noopener noreferrer">ExchangeRate-API</a>.</p>
+      <br>
+      <p class="source">This currency converter uses the <a href="https://www.exchangerate-api.com/" target="_blank" rel="noopener noreferrer">ExchangeRate-API</a>.</p>
 
 
     </div>
