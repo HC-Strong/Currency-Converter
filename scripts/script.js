@@ -19,6 +19,13 @@ document.querySelector("#converter-form")
   let requestUrl = baseUrl + `/${fromCurrency}/${toCurrency}/${amount}/`;
   let result = fetch(requestUrl)
     .then(response => response.json())
-    .then(json => displayResult(json, amount));
+    .then(json => {
+      if(json.result=="success") {
+        displayResult(json, amount);
+      } else {
+        alert("Error from Server: " + json["error-type"]);
+      }
+
+    });
 
 });
