@@ -21,9 +21,19 @@
           <br>
           <li>
             <label for="from-currency">Convert From:&nbsp;</lable>
-            <input type="text" id="from-currency" value="USD" name="from">
+            <input type="text" id="from-currency" value="USD" name="from" list="currencies">
+
             <label for="to-currency">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Convert&nbsp;To:&nbsp;</lable>
-            <input type="text" id="to-currency" value="CAD" name="to">
+            <input type="text" id="to-currency" value="CAD" name="to" list="currencies">
+
+            <datalist id="currencies">
+              <option>USD</option>
+              <option>CAD</option>
+              <option>MXN</option>
+              <option>JPY</option>
+              <option>GBP</option>
+            </datalist>
+
           </li>
           <li>
             <input type="submit" value="GO!">
