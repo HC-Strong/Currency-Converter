@@ -37,6 +37,10 @@ legend {
   padding-right: 26px;
 }
 
+label {
+  font-variant: small-caps;
+}
+
 hr {
   border-bottom: 1px dotted #330324;
 }
@@ -49,14 +53,19 @@ input {
   font-weight: bold;
   text-align: center;
   font-size: 1.1em;
-  width: 18%;
   padding: 5px;
 }
 
 input[type="number"] {
   padding-right:0px;
   padding-left: 15px;
+  width: 18%;
 }
+input[type="text"] {
+  width: 80%;
+}
+
+
 
 input[type="submit"]  {
   margin-top: 1em;
@@ -84,7 +93,7 @@ p.source {
   font-size: 0.8em;
 }
 
-li.test {
+li.outputBox {
   /* border: 5px double #330324; */
   text-align: center;
   margin-top: 0.5em;
@@ -92,6 +101,21 @@ li.test {
   left:0;
   right:0;
 }
+
+.col {
+  display: inline-block;
+  vertical-align:top;
+  white-space: nowrap;
+  width: 40%;
+  margin: 1em;
+}
+
+.name-output {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+
 #result.full{
   border: 5px double #330324;
   border-radius: 40px;

@@ -22,23 +22,36 @@
           </li>
           <br>
           <li>
-            <label for="from-currency">Convert From:&nbsp;</lable>
-            <input type="text" id="from-currency" value="USD" name="from" list="currencies">
-
-            <label for="to-currency">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Convert&nbsp;To:&nbsp;</lable>
-            <input type="text" id="to-currency" value="CAD" name="to" list="currencies">
-
+            <div class="col">
+              <div class="row">
+                <label for="from-currency">Convert From:</lable>
+              </div>
+              <div class="row">
+                <input type="text" id="from-currency" value="USD" name="from" list="currencies" class="currency-input">
+                <br>
+                <output id="from-name" for="from" class="name-output">United States Dollar</output>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+              <label for="to-currency"> Convert To:</lable>
+              </div>
+              <div class="row">
+                <input type="text" id="to-currency" value="CAD" name="to" list="currencies" class="currency-input">
+                <br>
+                <output id="to-name" for="to" class="name-output">Canadian Dollar</output>
+                </div>
+              </div>
             <datalist id="currencies">
               <!-- Currency Options Generated via jQuery from supportedCurrencies constant in currencies.js -->
             </datalist>
-
           </li>
           <li>
             <input type="submit" value="GO!">
             <br>
             <br>
           </li>
-          <li class="test">
+          <li class="outputBox">
             <output id="result"></output>
           </li>
         </ul>
