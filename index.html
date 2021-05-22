@@ -6,6 +6,8 @@
     <link href="styles/style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/currencies.js" defer></script>
+    <script src="scripts/dropdown.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -27,11 +29,7 @@
             <input type="text" id="to-currency" value="CAD" name="to" list="currencies">
 
             <datalist id="currencies">
-              <option>USD</option>
-              <option>CAD</option>
-              <option>MXN</option>
-              <option>JPY</option>
-              <option>GBP</option>
+              <!-- Currency Options Generated via jQuery from supportedCurrencies constant in currencies.js -->
             </datalist>
 
           </li>

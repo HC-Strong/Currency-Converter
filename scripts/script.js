@@ -25,7 +25,5 @@ document.querySelector("#converter-form")
       } else {
         alert("Error from Server: " + json["error-type"]);
       }
-
     });
-
 });
